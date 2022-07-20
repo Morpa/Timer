@@ -1,15 +1,15 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
 
 type ButtonProps = {
-  variant: 'primary' | 'secondary' | 'danger' | 'success';
-};
+  variant: 'primary' | 'secondary' | 'danger' | 'success'
+}
 
 const buttonVariants = {
   primary: 'purple',
   secondary: 'orange',
   danger: 'red',
   success: 'green',
-};
+}
 
 export const ButtonWrapper = styled.button<ButtonProps>`
   width: 100px;
@@ -18,6 +18,6 @@ export const ButtonWrapper = styled.button<ButtonProps>`
   ${(props) => {
     return css`
       background-color: ${buttonVariants[props.variant]};
-    `;
+    `
   }}
-`;
+`
